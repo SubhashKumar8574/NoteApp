@@ -13,7 +13,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
+            const response = await axios.post('https://noteapp-2ys7.onrender.com/api/auth/register', { name, email, password });
             if (response.data.success) {
                 toast.success('Signed Up Successfully', {
                     autoClose: 1500,
